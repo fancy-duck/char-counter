@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2nd JS</title>
+    <title>Product Sorter</title>
 </head>
 
 <body>
-    <select name="" id="sorter">
-        <option value="">Select</option>
-        <option value="asc">Price: Low to High</option>
-        <option value="dsc">Price: High to Low</option>
-    </select>
-    <table id="product_list" border="1"></table>
-</body>
-<script src="./script.js"></script>
 
+    <h2>Product List</h2>
+
+    <select id="sorter">
+        <option value="">Select Sorting</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-dsc">Price: High to Low</option>
+        <option value="rating-asc">Rating: Low to High</option>
+        <option value="rating-dsc">Rating: High to Low</option>
+    </select>
+
+    <br><br>
+
+    <table id="product_list" border="1" cellpadding="8"></table>
+
+    <script src="./script.js"></script>
+
+</body>
 </html>
